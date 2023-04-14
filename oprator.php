@@ -37,15 +37,20 @@ echo "<br>";
 echo "% =>";
 echo $num1%$num2;
 echo "<br>";
-
-
-
-
-
-
-
-
 echo "<hr>";
+
+
+$name='孫勝皇';
+//陣列
+['name='>'孫勝皇'];
+
+//這時候 name =key 鍵 後面則為 值
+// =>胖箭頭 fate arrow
+// ->瘦箭頭  arrow
+//&& = and  or 真or假  xor 兩者都是 即為錯
+echo "<hr>";
+ 
+echo
 
 
 
