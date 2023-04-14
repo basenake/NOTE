@@ -50,10 +50,10 @@ $name='孫勝皇';
 //&& = and  or 真or假  xor 兩者都是 即為錯
 echo "<hr>";
  
-echo
+$score=60;
+$level=($score>=60)?'及格':'不及格';
 
-
-
-
+echo $level;
+//if ($score>=60){$level='及格';}else{$level='不及格';}
 
 ?>
