@@ -47,13 +47,35 @@ $name='孫勝皇';
 //這時候 name =key 鍵 後面則為 值
 // =>胖箭頭 fate arrow
 // ->瘦箭頭  arrow
-//&& = and  or 真or假  xor 兩者都是 即為錯
+//&& = and  or 真or假  
+//xor 兩者都是 即為錯 兩者皆不是 即為對
 echo "<hr>";
  
-$score=60;
-$level=($score>=60)?'及格':'不及格';
+$score1=60;
+$level=($score1>=60)?'及格':'不及格';
 
 echo $level;
 //if ($score>=60){$level='及格';}else{$level='不及格';}
+echo "<hr>";
+//hw
+$a=10;
+$b=50;
+echo '$a= '.$a;
+echo "<br>";
+echo '$b= '.$b;
+echo "<br>";
+echo '交換後:<br>';
+
+$temp=$a;
+$a=$b;
+$b=$temp;
+
+echo '$a='.$a;
+echo "<br>";
+echo '$b='.$b;
+echo "<br>";
+
+
+echo "<hr>";
 
 ?>
