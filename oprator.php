@@ -49,8 +49,7 @@ $name='孫勝皇';
 // ->瘦箭頭  arrow
 //&& = and  or 真or假  
 //xor 兩者都是 即為錯 兩者皆不是 即為對
-echo "<hr>";
- 
+
 $score1=60;
 $level=($score1>=60)?'及格':'不及格';
 
@@ -73,9 +72,47 @@ $b=$temp;
 echo '$a='.$a;
 echo "<br>";
 echo '$b='.$b;
+
+echo "<br>";
+echo "<hr>";
+
+//test1
+$a=10;
+$b=50;
+echo '$a+= '.$a;
+echo "<br>";
+echo '$b= '.$b;
+echo "<br>";
+echo '交換後:<br>';
+
+$a +=$b;
+$b=$a-$b;
+$a -=$b;
+
+echo '$a=' .$a;
+echo "<br>";
+echo '$b=' .$b;
+echo "<br>";
+echo "<hr>";
+
+//test2
+$a=10;
+$b=50;
+echo '$a= '.$a;
+echo "<br>";
+echo '$b= '.$b;
+echo "<br>";
+echo '交換後:<br>';
+ 
+$a = '[a,b]';
+$b = 'a[0]';
+$a = 'a[1]';
+
+ 
+echo '$a=' .$a;
+echo "<br>";
+echo '$b=' .$b;
 echo "<br>";
 
-
-echo "<hr>";
 
 ?>
