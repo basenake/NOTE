@@ -32,5 +32,14 @@ echo '<br>';
 
 echo 10*10*PI ;
 echo '<br>';
+echo '<hr>';
+//可變變數
+$name='wayne';
+
+$wayne=30;
+
+echo $wayne;
+
+
 
 ?>
