@@ -63,6 +63,31 @@ switch($goodluck){
     default: 
         echo "地獄倒楣鬼,是否運氣太差了?";
 }
+echo "<hr>";
+//巢狀結構 多重判斷 如果第一項符合則不跑後面判斷 寫死判定 則可以規避
+$cook="85";
+echo "您的成績為:" .$cook;
+echo "<br>";
+if($cook>= 90){
+    $cook="A";
+}else if($cook>=80){
+    $cook="B";
+}else if($cook>=70){
+    $cook="C";
+}else if($cook>=60){
+    $cook="D";
+}else if($cook>=50){
+    $cook="E";
+}
+echo "成績等級為:" .$cook;
+echo "<br>";
+echo "成績評語:" ;
+
+
+
+
+
+
 
 
 
