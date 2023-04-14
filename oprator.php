@@ -2,7 +2,7 @@
 $check=false;
 
 echo $check;
-!$check=false;
+$check=false;
 
 echo $check;
 
@@ -15,6 +15,28 @@ $price--;
 echo $price;
 echo ++$price;
 
+echo "<hr>";
+$num1=50;
+$num2=40;
+echo '$num1='.$num1;
+echo '<br>';
+echo '$num2='.$num2;
+echo '<br>';
+echo "+ =>";
+echo $num1+$num2;
+echo "<br>";
+echo "- =>";
+echo $num1-$num2;
+echo "<br>";
+echo "* =>";
+echo $num1*$num2;
+echo "<br>";
+echo "/ =>";
+echo $num1/$num2;
+echo "<br>";
+echo "% =>";
+echo $num1%$num2;
+echo "<br>";
 
 
 
@@ -23,9 +45,7 @@ echo ++$price;
 
 
 
-
-
-
+echo "<hr>";
 
 
 
