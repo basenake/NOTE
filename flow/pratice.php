@@ -48,12 +48,14 @@ if($year %4 == 0){
     }else{
     echo $year."不是閏年";
 }
+echo "<br>";
 //以下 && () 可加可不加 ||為or
 //$year=2000;
 //if($year %4 == 0 && $yeae %100 ==0){
 //  echo $year."是閏年";
 //  }else{
 //    echo $year."不是閏年";}
+// 等於 ==  嚴謹等於=== 不等於!= 完全不等於 !==
 $year1=2100;
 if(($year1 %4 == 0 )&&($year1 % 100 !=0)){
     echo $year1."是閏年";
@@ -61,14 +63,15 @@ if(($year1 %4 == 0 )&&($year1 % 100 !=0)){
     echo $year1."不是閏年";
 }
 echo "<br>";
-$year2=2100;
+$year2=2400;
+//條件愈 嚴苛的 放後面
 if(($year2 %400 == 0 ) ||($year2 % 100 !=0) && ($year2 %4 ==0)){
     echo $year2."是閏年";
     }else{
     echo $year2."不是閏年";
 }
 echo "<br>";
-
+//巢狀 方式 
 
 
 
