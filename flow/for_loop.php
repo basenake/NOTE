@@ -1,9 +1,52 @@
 <?php
 // for loop
-for($a=1 ; $a<30; $a++){
-    echo $a-10;
+for($a=1 ; $a<10; $a++){
+    echo $a*10;
     echo ",";
 }
+//做1~10 *10 的while
+$a=0;
+while ($a < 10) {
+    echo $a*10;
+    echo "<br>";
+    $a++;
+}
+echo '$a'.$a;
+echo "<hr>";
+do{
+    echo $a*10;
+    echo "<br>";
+    $a++;
+}while($a<10);
+ echo '$a'.$a;
+ echo "<hr>";
+
+//改成while
+$n=97;
+for($i=3;$i<=97;$i++){
+    $check=false;
+    for($j=2;$j<$i;$j++){
+    
+        if($i%$j==0){
+            $check=true;
+            break;
+        }
+    }
+    
+    if($check==false){
+        echo $i . ",";
+    }
+}
+
+
+$a=0;
+while($a<97){
+    echo "$n%$a";
+}
+
+
+echo "<hr>";
+
 $n=100;
 $limit=ceil($n/1);
 echo '$a='.$a;
@@ -48,5 +91,7 @@ for ($x=1 ; $x<=9 ; $x++){
     }
 echo "<hr>";
 
-$n=57;
+
+
+//
  ?>
