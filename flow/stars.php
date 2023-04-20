@@ -80,4 +80,78 @@ for($i=0;$i<9;$i++){
     }
     echo "<br>";  
 }
+
+?>
+<h1>矩形</h1>
+<?php
+$n=7;
+for ($i=0; $i<$n;$i++) { 
+
+    for ($j=0; $j <$n ; $j++){
+        if($i==0 || $i==$n-1){
+            echo "*";
+        }else if ($j==0 || $j==$n-1){
+            echo "*";
+        }else{
+            echo "&nbsp;";
+        }
+    }
+    echo "<br>";
+}
+?>
+<h1>矩形對角線</h1>
+<?php
+$n=9;
+for ($i=0; $i<$n;$i++) { 
+
+    
+    for($j=0;$j<$n;$j++){
+        if($i==0 || $i==($n-1)){
+            echo "*";
+        }else if($j==0 || $j==$n-1 || $i==$j || $i==$n-1-$j){  
+            echo "*";
+        // }else if ($j==0 || $j==$n-1){
+        //     echo "*";
+        // }else if ($j==$i || $j==$n-1){
+        //     echo "1";
+        // }else if ($i==$j || $j==$n-1-$i){
+        //     echo "2";
+        }else { 
+            echo "&nbsp;";
+        }
+    }
+    echo "<br>";
+}
+?>
+<h1>空菱形</h1>
+<?php
+$temp=0;
+for($i=0;$i<9;$i++){
+
+    /* if($i<5){
+        $tmp=$i;
+    }else{
+        $tmp=8-$i;
+    } */
+    
+    $tmp=($i<5)?$i:8-$i;
+
+    for($j=0;$j<(4-$tmp);$j++){
+        echo "&nbsp;";
+    }
+
+    for($k=0;$k<($tmp*2+1);$k++){
+        echo "*";
+    }
+    echo "<br>";  
+}
+
+
+
+
+
+
+
+
+
 ?>
