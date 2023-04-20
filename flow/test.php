@@ -8,15 +8,12 @@
 // }
 echo "<hr>";
 
-
-for($c=0 ; $c<10;$c++){
-    echo "$c";
-    echo "<br>";
+$n=10;
+for($c=0 ; $c<=$n;$c++){
     for ($i=0; $i<=$c; $i++) { 
-    echo "$i";
-
+    echo "*";
     }
-
+    echo "<br>";
 };
 echo "<hr>";
 // for ($a=1;$a<20 ; $a=$a--) { 

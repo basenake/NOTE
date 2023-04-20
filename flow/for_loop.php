@@ -46,6 +46,7 @@ for ($x=1 ; $x<=9 ; $x++){
     }
         echo "<br>";}
     }
-echo "<hr>"
+echo "<hr>";
 
+$n=57;
  ?>
