@@ -37,16 +37,7 @@ for($i=3;$i<=97;$i++){
         echo $i . ",";
     }
 }
-
-
-$a=0;
-while($a<97){
-    echo "$n%$a";
-}
-
-
 echo "<hr>";
-
 $n=100;
 $limit=ceil($n/1);
 echo '$a='.$a;
@@ -77,7 +68,7 @@ for($a=2 ; $a<97 ; $a++){
 //99乘法表
 for ($x=1 ; $x<=9 ; $x++){
 for ($y=1 ; $y<=9 ; $y++){
-    echo "{$x}*{$y}=" .($x)*($y)  ;
+    echo "{$x}x{$y}=" .($x)*($y)  ;
 }
     echo "<br>";
 }
