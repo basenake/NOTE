@@ -1,3 +1,14 @@
+<style>
+    table{ 
+        border-collapse: collapse;
+        width: 50%;
+    }
+    td{
+        padding: 5px 15 px;
+        border:1px solid #ccc;
+    }
+</style>
+
 <?php
 //設計 切入點 影響 陣列 排序
 $students=[ 
@@ -36,6 +47,28 @@ echo "<pre>";
 print_r($students);
 echo "</pre>";
 //可以參考老師的打法
+//foreach秀出陣列
+echo "<table>";
+echo"<tr>";    
+    echo "<td>國文</td>";
+    echo "<td>英文</td>";
+    echo "<td>數學</td>";
+    echo "<td>地理</td>";
+    echo "<td>歷史</td>";
+echo"</tr>";
+foreach ($students as $stu => $scores) {
+    echo"<tr>";    
+    echo "<td>";
+    echo $stu; 
+    echo "<td>";
+    foreach ($scores as $sub => $score) {
+        echo "<td>";
+        echo $stu;
+        echo "<td>";
+    }
+    echo"</tr>";
+}
+echo "</table>";
 
 
 
