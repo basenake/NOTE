@@ -60,7 +60,12 @@ echo "反轉陣列";
 print_r($a);
 echo "</pre>";
 
-
+$b= array(1,2,3,4,5);
+$x = array_reverse($b,true);
+$y = array_reverse($b);
+print_r($x);
+echo '</br> ';
+print_r($y);
 
 
 
