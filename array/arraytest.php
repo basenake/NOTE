@@ -49,7 +49,7 @@ echo "</pre>";
 //可以參考老師的打法
 //foreach秀出陣列
 echo "<table>";
-echo"<tr>";    
+echo "<tr>";    
     echo "<td></td>";
     echo "<td>國文</td>";
     echo "<td>英文</td>";
@@ -66,15 +66,6 @@ foreach ($students as $stu => $scores) {
     echo"</tr>";
 }
 echo "</table>";
-
-
-
-
-
-
-
-
-
 
 
 
