@@ -79,8 +79,9 @@ echo "</pre>";
 echo $aa[1];
 //以下 同時為 01 跟name01
 echo $aa['name01'];
-
-//多維陣列
+?>
+<h1>多維陣列</h1>
+<?php
 $ab=[
      [11,12,31,57,94,64,52],
      [87,98,65,31,87,425,16],
@@ -96,6 +97,9 @@ print_r ($ab[2]);
 echo "</pre>";
 echo "<hr>";
 $da="bak";
+?>
+<h1>判斷陣列</h1>
+<?php
 if(is_array($aa)){
     echo "是陣列";
 }else{
@@ -119,80 +123,108 @@ if(in_array("87", $b)){
 }
 
 echo "<hr>";
-
+?>
+<h1>陣列排序</h1>
+1.sort 排序
+2.rsort反排序
+<?php
 $d=["N","I",30,21,77,3];
 $z=["z","c",8,10,57,96,31];
+
+rsort($d);
+echo "<pre>";
+print_r($d);
+echo "</pre>";
+echo "<hr>";
+
+sort($d);
 echo "<pre>";
 print_r($d);
 echo "</pre>";
 
-rsort($d);
-
 echo "<hr>";
 // result=sort($d) 沒用
+sort($z);
 echo "<pre>";
 print_r($z);
 echo "</pre>";
-rsort($z);
 echo "<hr>";
 
+rsort($z);
+echo "<pre>";
+print_r($z);
+echo "</pre>";
+echo "<hr>";
+
+?>
+<h1>填滿陣列</h1>
+<?php
 $fill=array_fill(0,10,'php');
 echo "<pre>";
 print_r($fill);
 echo "</pre>";
 echo "<hr>";
-
+?>
+<h1>從陣列尋找值</h1>
+<?php
 echo array_search("10",$z);
 echo "<br>";
 echo $z[5];
 echo "<hr>";
 
+?>
+<h1>陣列key 須尋找</h1>
+<?php
 $keys=array_keys($z);
 echo "<pre>";
 print_r($keys);
 echo "</pre>";
 echo "<br>";
-//
+
 $keys=array_keys($d);
 echo "<pre>";
 print_r($keys);
 echo "</pre>";
-//
+
 echo key($d);
 echo "<hr>";
-
+?>
+<h1>合併陣列</h1>
+<?php
 $merge=array_merge($d,$z);
 echo "<pre>";
 print_r($merge);
 echo "</pre>";
 
-
+?>
+<h1>字串化陣列or 序列化</h1>
+<?php
 $seA=serialize($z);
 echo "<pre>";
 echo $seA;
 echo "</pre>";
-
+?>
+<h1>陣列字串化 or 反序列化</h1>
+<?php
 echo "<hr>";
 $ueA=serialize($z);
 echo "<pre>";
 print_r($ueA);
 echo "</pre>";
 
-
+?>
+<h1>以字串 or 符號 把陣列 字串化</h1>
+<?php
 echo "<hr>";
 echo "<pre>";
 $n=implode(',',$z);
 echo $n;
 echo "</pre>";
 
-
-
 echo "<hr>";
 echo "<pre>";
 $array=explode(',',$n);
 print_r($array);
 echo "</pre>";
-
-
 
 ?>
