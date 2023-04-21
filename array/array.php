@@ -104,7 +104,6 @@ if(is_array($aa)){
 $check=is_array($aa);
 //跟上面用法依樣
 
-
 echo "<br>";
 if(is_array($da)){
     echo "是陣列";
@@ -122,18 +121,77 @@ if(in_array("87", $b)){
 echo "<hr>";
 
 $d=["N","I",30,21,77,3];
-
-echo "<pre>";
-print_r($d);
-echo "</pre>";
-
-sort($d);
-// result=sort($d) 沒用
+$z=["z","c",8,10,57,96,31];
 echo "<pre>";
 print_r($d);
 echo "</pre>";
 
 rsort($d);
+
+echo "<hr>";
+// result=sort($d) 沒用
+echo "<pre>";
+print_r($z);
+echo "</pre>";
+rsort($z);
+echo "<hr>";
+
+$fill=array_fill(0,10,'php');
+echo "<pre>";
+print_r($fill);
+echo "</pre>";
+echo "<hr>";
+
+echo array_search("10",$z);
+echo "<br>";
+echo $z[5];
+echo "<hr>";
+
+$keys=array_keys($z);
+echo "<pre>";
+print_r($keys);
+echo "</pre>";
+echo "<br>";
+//
+$keys=array_keys($d);
+echo "<pre>";
+print_r($keys);
+echo "</pre>";
+//
+echo key($d);
+echo "<hr>";
+
+$merge=array_merge($d,$z);
+echo "<pre>";
+print_r($merge);
+echo "</pre>";
+
+
+$seA=serialize($z);
+echo "<pre>";
+echo $seA;
+echo "</pre>";
+
+echo "<hr>";
+$ueA=serialize($z);
+echo "<pre>";
+print_r($ueA);
+echo "</pre>";
+
+
+echo "<hr>";
+echo "<pre>";
+$n=implode(',',$z);
+echo $n;
+echo "</pre>";
+
+
+
+echo "<hr>";
+echo "<pre>";
+$array=explode(',',$n);
+print_r($array);
+echo "</pre>";
 
 
 
