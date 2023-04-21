@@ -50,6 +50,7 @@ echo "</pre>";
 //foreach秀出陣列
 echo "<table>";
 echo"<tr>";    
+    echo "<td></td>";
     echo "<td>國文</td>";
     echo "<td>英文</td>";
     echo "<td>數學</td>";
@@ -58,13 +59,9 @@ echo"<tr>";
 echo"</tr>";
 foreach ($students as $stu => $scores) {
     echo"<tr>";    
-    echo "<td>";
-    echo $stu; 
-    echo "<td>";
+    echo "<td>$stu;</td>";
     foreach ($scores as $sub => $score) {
-        echo "<td>";
-        echo $stu;
-        echo "<td>";
+        echo "<td>$score</td>";
     }
     echo"</tr>";
 }
