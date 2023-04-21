@@ -76,7 +76,7 @@ for($i=0;$i<9;$i++){
     }
 
     for($k=0;$k<($tmp*2+1);$k++){
-        echo "*";
+        echo "1";
     }
     echo "<br>";  
 }
@@ -93,7 +93,7 @@ for ($i=0; $i<$n;$i++) {
         }else if ($j==0 || $j==$n-1){
             echo "*";
         }else{
-            echo "&nbsp;";
+            echo "0";
         }
     }
     echo "<br>";
@@ -109,7 +109,7 @@ for ($i=0; $i<$n;$i++) {
         if($i==0 || $i==($n-1)){
             echo "*";
         }else if($j==0 || $j==$n-1 || $i==$j || $i==$n-1-$j){  
-            echo "*";
+            echo "0";
         // }else if ($j==0 || $j==$n-1){
         //     echo "*";
         // }else if ($j==$i || $j==$n-1){
