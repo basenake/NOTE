@@ -94,6 +94,28 @@ echo "</pre>";
 echo "<pre>";
 print_r ($ab[2]);
 echo "</pre>";
+echo "<hr>";
+$da="bak";
+if(is_array($aa)){
+    echo "是陣列";
+}else{
+    echo "不是陣列";
+}
+echo "<br>";
+if(is_array($da)){
+    echo "是陣列";
+}else{
+    echo "不是陣列";
+}
+echo "<br>";
+
+if(in_array("87", $b)){
+    echo "87在陣列";
+}else{
+    echo "87不在陣列";
+}
+
+
 
 
 ?>
