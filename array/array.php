@@ -101,6 +101,10 @@ if(is_array($aa)){
 }else{
     echo "不是陣列";
 }
+$check=is_array($aa);
+//跟上面用法依樣
+
+
 echo "<br>";
 if(is_array($da)){
     echo "是陣列";
@@ -115,6 +119,21 @@ if(in_array("87", $b)){
     echo "87不在陣列";
 }
 
+echo "<hr>";
+
+$d=["N","I",30,21,77,3];
+
+echo "<pre>";
+print_r($d);
+echo "</pre>";
+
+sort($d);
+// result=sort($d) 沒用
+echo "<pre>";
+print_r($d);
+echo "</pre>";
+
+rsort($d);
 
 
 
