@@ -17,9 +17,27 @@ $gap2=($nextbrithday-$today)/(24*60*60);
 echo  "距離" . date("Y-m-d",$nextbrithday) . "還有" .$gap2 ."天";
 echo "<br>";
 $brithday2=strtotime("2023-10-07");
-
-
-
-
-
+echo "<hr>";
+?>
+<?php
+$today=strtotime('now');
+echo date("Y/m/d");
+echo "<br>";
+echo date("m.d.Y");
+echo "<br>";
+echo date("m.d.Y.D");
+echo "<br>";
+echo date("m.d.Y.l");
+echo "<br>";
+echo date("Y-m-d H:i:s");
+echo "<br>";
+echo date("Y-n-d g:i:s");
+echo "<br>";
+echo date("Y-m-d G:") .(int)date("i").":".(int)date("s");
+echo "<br>";
+echo date("Y-m-d-H");
+echo "<br>";
+echo "今天是西元" .date("Y年n月j日");
+echo "<br>";
+echo date("N")>=6?"假日":"工作日";
 ?>
