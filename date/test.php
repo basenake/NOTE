@@ -40,4 +40,46 @@ echo "<br>";
 echo "今天是西元" .date("Y年n月j日");
 echo "<br>";
 echo date("N")>=6?"假日":"工作日";
+
+
+
+?>
+<h2>利用迴圈來計算連續五個周一的日期</h2>
+<div>2024-10-04 星期一</div>
+<div>2024-10-11 星期一</div>
+<div>2024-10-18 星期一</div>
+<div>2024-10-25 星期一</div>
+<div>2024-11-01 星期一</div>
+<?php
+//以下為 禮拜一 起始點為0
+echo "<hr>";
+$today=strtotime("now");
+$week=date("N",$today);
+$gap=1-$week;
+$monday=date("Y-m-d l",strtotime("$gap days",$today));
+$second=date("y-m-d l",$second);
+
+for($i=0;$i<5;$i++){
+    echo date("Y-m-d l" ,strtotime("+$i week,$second"));
+    echo "<br>";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
