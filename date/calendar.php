@@ -42,7 +42,7 @@ echo "<td>四</td>";
 echo "<td>五</td>";
 echo "<td>六</td>";
 echo "</tr>";
-for($i;$i<$weeks;$i++){
+for($i=0;$i<$weeks;$i++){
     echo "<tr>";
     for($j=0;$j<7;$j++){
         echo "<td>";
@@ -53,15 +53,17 @@ for($i;$i<$weeks;$i++){
                 echo $j+7*$i-$firstWeekSpace;
             }
         }else if($i==$weeks-1){
-            if($j>$finalweek){
+            if($j>$finalDateWeek){
                 echo "&nbsp;";
-            }else{
-                echo $j+7*$i-$firstweekspace;
+            }else {
+                echo $j+7*$i-$firstWeekSpace;
             }
-        }
+        }else{
+            echo $j+7*$i-$firstWeekSpace;
         echo "</td>";
         }
         echo "</tr>";
     }
-echo "</table>"
+echo "</table>";
+}
 ?>
