@@ -12,11 +12,30 @@ echo "<br>";
 $yesterday=strtotime("now")-(60*60*24);
 echo date("Y-m-d H:i:s",$yesterday);
 
+echo "<br>";
+$today=strtotime("now");
+echo $today;
+echo "<br>";
 
-
-
-
-
+echo "現在時間是:".$today."秒";
+echo "<br>";
+echo date ("Y-m-d H:i:s",$today);
+echo "<br>";
+echo "人類可讀性日期字串:".date("Y-m-d H:i:s");
+echo "<br>";
+$tomorrow=strtotime("+1 day",$today);
+echo "明天:".date ("Y-m-d H:i:s",$tomorrow);
+$yesterday=strtotime("-1 day",$today);
+echo "<br>";
+echo "昨天:".date ("Y-m-d H:i:s",$yesterday);
+echo "<br>";
+$nextweek=strtotime("+1week",$today);
+echo "下周:".date ("Y-m-d H:i:s",$nextweek);
+$lastweek=strtotime("-1week",$today);
+echo "<br>";
+echo "上周:".date ("Y-m-d H:i:s",$lastweek);
+echo "<br>";
+echo strtotime("2023-07-01");
 
 
 
