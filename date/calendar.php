@@ -12,11 +12,11 @@ $today=strtotime("now");
 $month=date("n",$today);
 $days=date("t",$today);
 $firstdate=date("y-n-1",$today);
-$finaldate=date("y-m-t",$today);
+$finaldate=date("y-n-t",$today);
 $firstdateweek=date("w",strtotime($firstdate));
-$weeks=ceil(($days+$firstdateweek)/7);
 $finaldateweek=date("w",strtotime($finaldate));
-
+$weeks=ceil(($days+$firstdateweek)/7);
+$firstweekwpace=$firstdateweek;
 echo "月份:" .$month;
 echo "<br>";
 echo "天數:" .$days;
@@ -47,22 +47,21 @@ for($i=0;$i<$weeks;$i++){
     for($j=0;$j<7;$j++){
         //日
         echo "<td>";
-
         if($i==0){
             if($j<$firstdateweek){
                 echo "&nbsp;";
             }else{
-                echo $j;
+                echo $j+7*$i-($firstdateweek-1);
             }
         }else if($i==$week-1){
             if ($j>$finaldateweek){
                 echo "&nbsp;";
             }else{
-                echo $j;
+                echo $j+7*$i-($firstdateweek-1);
             }
            
         }else{
-            echo $j;
+            echo $j+7*$i-($firstdateweek-1);
         }
         echo "</td>";
     }
