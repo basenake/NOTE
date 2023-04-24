@@ -81,11 +81,26 @@ echo "<br>";
 echo join(".",$ex);
 
 
+echo "<h3>strpos 返回 某字串回到首次的位置</h3>";
+$str="今天天氣很爛";
+$serach="天氣";
+echo $str;
+echo "<br>";
+echo $serach;
+echo "<br>";
+echo mb_strpos($str,$serach);
+echo "<hr>";
 
 
 
-
-
+echo "<h3>strlen 字串長度</h3>";
+echo $str;
+echo "<br>";
+echo $str2;
+echo "<br>";
+echo mb_strlen($str);
+echo "<br>";
+echo mb_strlen($str2);
 
 ?>
 
