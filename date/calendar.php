@@ -16,7 +16,7 @@ $finaldate=date("y-n-t",$today);
 $firstdateweek=date("w",strtotime($firstdate));
 $finaldateweek=date("w",strtotime($finaldate));
 $weeks=ceil(($days+$firstdateweek)/7);
-$firstweekwpace=$firstdateweek;
+$firstweekwpace=$firstdateweek-1;
 echo "月份:" .$month;
 echo "<br>";
 echo "天數:" .$days;
