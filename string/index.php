@@ -55,7 +55,7 @@ $replace="很好";
 echo str_replace("真爛",$replace,$str);
 echo "<br>";
 //echo str_replace("很好",$replace,str_replace("天","日",$str));
-echo str_replace(["天","很好"],["日",$replace],$str);
+echo str_replace(["天","真爛"],["日",$replace],$str);
 echo "<br>";
 echo "<hr>";
 
