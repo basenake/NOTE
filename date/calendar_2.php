@@ -3,10 +3,11 @@
         border-collapse: collapse;
     }
     td{
-        border: 3px solid black;
+        border:1px solid gray;
         padding:5px 10px;
-        }
+    }
 </style>
+<h2>月曆</h2>
 <?php
 $today=strtotime("now");
 $month=date("n",$today);
@@ -42,7 +43,7 @@ echo "<td>四</td>";
 echo "<td>五</td>";
 echo "<td>六</td>";
 echo "</tr>";
-for($i;$i<$weeks;$i++){
+for($i=0;$i<$weeks;$i++){
     echo "<tr>";
     for($j=0;$j<7;$j++){
         echo "<td>";
@@ -53,15 +54,17 @@ for($i;$i<$weeks;$i++){
                 echo $j+7*$i-$firstWeekSpace;
             }
         }else if($i==$weeks-1){
-            if($j>$finalweek){
+            if($j>$finalDateWeek){
                 echo "&nbsp;";
             }else{
-                echo $j+7*$i-$firstweekspace;
+                echo $j+7*$i-$firstWeekSpace;
             }
+        }else{
+            echo $j+7*$i-$firstWeekSpace;
         }
         echo "</td>";
-        }
-        echo "</tr>";
     }
-echo "</table>"
+    echo "</tr>";
+}
+echo "</table>";
 ?>
