@@ -59,6 +59,7 @@ echo str_replace(["天","真爛"],["日",$replace],$str);
 echo "<br>";
 echo "<hr>";
 echo "<h3>字元切成陣列explode imploder join</h3>";
+//較容易使用在 文章 摘要裡面
 $str="在此範例中有個字串叫做「這是wibibi測試字串」，我們故意參雜了中文字與英文字，接著輸出 mb_substr 截取的字串，從第 0 個字擷取到第 8 個字，編碼採用 UTF-8 編碼，這樣跑出來的結果就是「這是wibibi」這 8 個字囉！
 ";
 echo "<br>";
@@ -67,6 +68,7 @@ echo "<pre>";
 print_r($ex);
 echo "</pre>";
 $file="list.doc";
+//可以用於 尋找 特定 副檔名
 $sub=explode(".",$file);
 echo "<pre>";
 print_r($sub);
