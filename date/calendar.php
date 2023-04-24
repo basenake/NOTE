@@ -9,12 +9,13 @@
 <?php
 date_default_timezone_set("Asia/Taipei") ;
 $today=strtotime("now");
-$month=date("n");
-$days=date("t");
-$firstdate=date("y-n-1");
-$finaldate=date("y-m-t");
+$month=date("n",$today);
+$days=date("t",$today);
+$firstdate=date("y-n-1",$today);
+$finaldate=date("y-m-t",$today);
 $firstdateweek=date("w",strtotime($firstdate));
 $weeks=ceil(($days+$firstdateweek)/7);
+$finaldateweek=date("w",strtotime($finaldate));
 
 echo "月份:" .$month;
 echo "<br>";
@@ -28,7 +29,7 @@ echo "最後一天:" .$firstdateweek;
 echo "<br>";
 echo "週數:" .$weeks;
 echo "<br>";
-
+echo "最後一天星期:" .$finaldateweek;
 echo "<table>";
 echo "<tr>";
 echo "<td>日</td>";
@@ -40,16 +41,30 @@ echo "<td>五</td>";
 echo "<td>六</td>";
 echo "</tr>";
 
-for($i<0;$i<$weeks;$i++){
+for($i=0;$i<$weeks;$i++){
     //週
     echo "<tr>";
-
-    for($j<0;$j<$weeks;$j++){
+    for($j=0;$j<7;$j++){
         //日
         echo "<td>";
 
-        echo "<td>";
-
+        if($i==0){
+            if($j<$firstdateweek){
+                echo "&nbsp;";
+            }else{
+                echo $j;
+            }
+        }else if($i==$week-1){
+            if ($j>$finaldateweek){
+                echo "&nbsp;";
+            }else{
+                echo $j;
+            }
+           
+        }else{
+            echo $j;
+        }
+        echo "</td>";
     }
     echo "</tr>";
 
