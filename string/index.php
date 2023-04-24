@@ -25,9 +25,39 @@ echo mb_substr($str3,0,3);
 echo "<br>";
 echo mb_substr($str3,0,3);
 echo "<br>";
+echo "<hr>";
 echo "<h3>中英混和取字字串</h3>";
 echo mb_substr( $str3,0,16);
 echo "<br>";
+echo "<hr>";
+echo "<h3>取消前後空白 字串清洗</h3>";
+$str4="    今天 天氣 很爛    ";
+$str5="  今天 天氣 很爛    ";
+echo $str4;
+echo "<br>";
+echo $str5;
+echo "<br>";
+echo trim($str4);
+echo "<br>";
+echo trim($str5);
+echo "<br>";
+echo "<hr>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
