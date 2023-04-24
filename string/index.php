@@ -58,13 +58,25 @@ echo "<br>";
 echo str_replace(["天","真爛"],["日",$replace],$str);
 echo "<br>";
 echo "<hr>";
-
-
-
-
-
-
-
+echo "<h3>字元切成陣列explode imploder join</h3>";
+$str="在此範例中有個字串叫做「這是wibibi測試字串」，我們故意參雜了中文字與英文字，接著輸出 mb_substr 截取的字串，從第 0 個字擷取到第 8 個字，編碼採用 UTF-8 編碼，這樣跑出來的結果就是「這是wibibi」這 8 個字囉！
+";
+echo "<br>";
+$ex=explode("，",$str);
+echo "<pre>";
+print_r($ex);
+echo "</pre>";
+$file="list.doc";
+$sub=explode(".",$file);
+echo "<pre>";
+print_r($sub);
+echo "</pre>";
+echo "<hr>";
+echo "<h3>implode  join 取代 並換成 想要的字元 ，換成 , .</h3>";
+echo "<br>";
+echo implode(",",$ex);
+echo "<br>";
+echo join(".",$ex);
 
 
 
