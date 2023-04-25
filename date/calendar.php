@@ -60,10 +60,11 @@ for($i=0;$i<$weeks;$i++){
             }
         }else{
             echo $j+7*$i-$firstWeekSpace;
-        echo "</td>";
+        
         }
-        echo "</tr>";
+        echo "</td>";
     }
-echo "</table>";
+    echo "</tr>";
 }
+echo "</table>";
 ?>
