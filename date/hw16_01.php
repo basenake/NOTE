@@ -37,16 +37,10 @@ for($i=0;$i<$weeks;$i++){
     echo "<tr>";
     for($j=0;$j<7;$j++){
         echo "<td>";
-        if($i==0){
-            if($j<$frdw){
+        if($i==0  || $i==$weeks-1){
+            if($j<$frdw and $j>$fndw){
                 echo "&nbsp;";
             }else{
-                echo $j+7*$i-$frws;
-            }
-        }else if($i==$weeks-1){
-            if($j>$fndw){
-                echo "&nbsp;";
-            }else {
                 echo $j+7*$i-$frws;
             }
         }else{
