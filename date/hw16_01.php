@@ -11,8 +11,8 @@
 $today=strtotime("now");
 $month=date("n",$today);
 $days=date("t",$today);
-$frd=date("Y-n-l",$today);
-//firstday
+$frd=date("Y-n-1",$today);
+//firstday  
 $fnd=date("Y-n-t",$today);
 //fianlday
 $frdw=date("w",strtotime($frd));
@@ -37,15 +37,10 @@ for($i=0;$i<$weeks;$i++){
     echo "<tr>";
     for($j=0;$j<7;$j++){
         echo "<td>";
-        if($i==0  || $i==$weeks-1){
-            if($j<$frdw and $j>$fndw){
-                echo "&nbsp;";
-            }else{
-                echo $j+7*$i-$frws;
-            }
+        if($i==0 and $j<$frdw or $i==0 and $j==$frd || $i==$weeks-1 and $j>$fndw  or $i==$weeks-1 and $j>$fndw){
+            echo "&nbsp;";
         }else{
             echo $j+7*$i-$frws;
-        
         }
         echo "</td>";
     }

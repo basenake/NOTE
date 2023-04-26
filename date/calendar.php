@@ -55,9 +55,9 @@ for($i=0;$i<$weeks;$i++){
         }else if($i==$weeks-1){
             if($j>$finalDateWeek){
                 echo "&nbsp;";
-            }else {
-                echo $j+7*$i-$firstWeekSpace;
-            }
+             }else {
+                 echo $j+7*$i-$firstWeekSpace;
+             }
         }else{
             echo $j+7*$i-$firstWeekSpace;
         
