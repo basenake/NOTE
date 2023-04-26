@@ -12,13 +12,13 @@ $today=strtotime("now");
 $month=date("n",$today);
 $days=date("t",$today);
 $frd=date("Y-n-1",$today);
-//firstday  
+//firstday  第一天
 $fnd=date("Y-n-t",$today);
-//fianlday
+//fianlday 最後一天
 $frdw=date("w",strtotime($frd));
-//firstweek
+//firstdayweek 第一周
 $fndw=date("w",strtotime($fnd));
-//fianlweek
+//fianldayweek 最後一周
 $weeks=ceil(($days+$frdw)/7);
 $frws=$frdw-1;
 //fristweekspace
