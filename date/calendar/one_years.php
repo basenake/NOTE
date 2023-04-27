@@ -25,7 +25,7 @@ $lastmonthday=date("t",strtotime("-1 month",$today));
 $nextdate=date("j",strtotime("+4 day",$today));
 // 上個月剩下幾天
 $lastmonthdays=$lastmonthday-$lastday;
-
+$today1=date("d",strtotime("yesterday"));
 
 echo "<hr>";
 echo $lastday;
@@ -34,7 +34,7 @@ echo $nextdate;
 echo "<hr>";
 echo $lastmonthdays;
 echo "<hr>";
-
+echo $today1;
 
 
 $days=0;
