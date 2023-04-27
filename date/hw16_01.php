@@ -8,7 +8,7 @@
     }
 </style>
 <?php
-$today=strtotime("now");
+$today=strtotime("now");//當前時間
 $month=date("n",$today);
 $days=date("t",$today);
 $frd=date("Y-n-1",$today);
@@ -77,12 +77,12 @@ echo "<td>四</td>";
 echo "<td>五</td>";
 echo "<td>六</td>";
 echo "</tr>";
-for($i=0;$i<count($days)/7;$i++){
-    echo ($i%7==0)?"<tt>":'';
+for($i=0;$i<count($days);$i++){
+    echo ($i % 7==0 )?"<tr>":'';
     echo "<td>";
     echo $days[$i];
     echo "</td>";
-    echo ($i%7==6)?"</tr>":'';
+    echo ($i % 7==6 )?"</tr>":'';
 }
 
 echo "</table>";
