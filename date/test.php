@@ -18,7 +18,7 @@ echo  "距離" . date("Y-m-d",$nextbrithday) . "還有" .$gap2 ."天";
 echo "<br>";
 $brithday2=strtotime("2023-10-07");
 echo "<hr>";
-?>
+?>   
 <?php
 $today=strtotime('now');
 echo date("Y/m/d");
@@ -57,10 +57,10 @@ $today=strtotime("now");
 $week=date("N",$today);
 $gap=1-$week;
 $monday=date("Y-m-d l",strtotime("$gap days",$today));
-$second=date("y-m-d l",$second);
+$second=strtotime("$gap days",$today);
 
 for($i=0;$i<5;$i++){
-    echo date("Y-m-d l" ,strtotime("+$i week,$second"));
+    echo date("Y-m-d l",strtotime("$i+week ,$second"));
     echo "<br>";
 }
 
