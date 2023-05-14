@@ -53,7 +53,7 @@ for($i=0;$i<$weeks;$i++){
                 echo $j+7*$i-$firstWeekSpace;
             }
         }else if($i==$weeks-1){
-            if($j>$finalDateWeek){
+            if($j>$flinalDateWeek){
                 echo "&nbsp;";
              }else {
                  echo $j+7*$i-$firstWeekSpace;
